@@ -1,0 +1,74 @@
+/*
+-- Query: SELECT * FROM tfm.usuario
+LIMIT 0, 1000
+
+-- Date: 2024-02-26 15:15
+*/
+INSERT INTO `` (`ID_Usuario`,`Nombre`,`Correo_electronico`,`Contrasena`,`Fecha_Registro`,`Tipo_usuario`) VALUES (1,'Olek','olek@gmail.com','olek1234',NULL,NULL);
+INSERT INTO `` (`ID_Usuario`,`Nombre`,`Correo_electronico`,`Contrasena`,`Fecha_Registro`,`Tipo_usuario`) VALUES (5,'NombreUsuario','correo@example.com','$2a$2a$10$w7tyD/UPUp8vHf3g2A7aLOTw/A4ptRsVJi1FWO7KKwLF7ynXVY7Pi','2023-11-01','Regular');
+INSERT INTO `` (`ID_Usuario`,`Nombre`,`Correo_electronico`,`Contrasena`,`Fecha_Registro`,`Tipo_usuario`) VALUES (6,'NuevoUsuario','correo@example.com','password','2023-11-01','Regular');
+INSERT INTO `` (`ID_Usuario`,`Nombre`,`Correo_electronico`,`Contrasena`,`Fecha_Registro`,`Tipo_usuario`) VALUES (10,'Olek2','olek@example.com','password1',NULL,'Regular');
+
+
+/*
+-- Query: SELECT * FROM tfm.producto
+LIMIT 0, 1000
+
+-- Date: 2024-02-26 15:16
+*/
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (112,3,'Teclado Mecánico Gaming Mini','DK61SE es un teclado mecánico del 60% con un diseño de distribución ANSI ultracompacto y un cuerpo que se puede agarrar con una mano, aportando más espacio para sus operaciones de escritorio y ratón.','Dieryau',35.00,4.50,'https://m.media-amazon.com/images/I/61-RqmZ0OIL._AC_SX679_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (113,3,'Energia Gaming Keyboard ESG K2 Ghosthunter','Teclado de membrana con pulsación suave y optimizada para una mayor durabilidad.','Energia',15.00,4.00,'https://m.media-amazon.com/images/I/71NQJ7P5f+L._AC_UL320_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (114,3,'Teclado con Cable, QWERTY ','Rioi RK907 teclado USB posee tamaño completo, ultra delgado y compacto. Cuenta con cable y 105 teclas con teclado numérico. Una gama completa de funciones','Riio',13.00,3.00,'https://m.media-amazon.com/images/I/61PXDscB52L.__AC_SX300_SY300_QL70_ML2_.jpg',10);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (115,3,'Teclado Gamer Mecánico','El teclado mecánico K98SE presenta un diseño de 98 teclas que maximiza la eficiencia del espacio, preservando letras esenciales, números y teclas de función.','KEMOVa',50.00,5.00,'https://m.media-amazon.com/images/I/71xjmuabBFL.__AC_SX300_SY300_QL70_ML2_.jpg',10);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (117,5,'KORU Monitor de 22” FHD 75 Hz','La alta frecuencia de actualización de 75 Hz y el tiempo de respuesta de 6 ms acortan el tiempo de carga de las páginas web para un flujo de trabajo más fluido.','KORU',85.00,4.00,'https://m.media-amazon.com/images/I/71iPjyxvx0L.__AC_SX300_SY300_QL70_ML2_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (118,5,'Monitor Curvo - 23,6 Pulgadas Full HD','Una pantalla VA de 23.6 \'\' con un ángulo de visión amplio de 178 °, ofrece una calidad de visualización impresionante de 1920 x 1080 a 60Hz','KORU',102.00,4.20,'https://m.media-amazon.com/images/I/716p5NsINmL.__AC_SX300_SY300_QL70_ML2_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (119,4,'Escritorio Regulable en Altura, Mesa Regulable, Enchufe y Cajón, 60 x 140 cm de Encimera','Este escritorio es ajustble en altura de forma continua entre 72 y 120 cm, emite muy poco ruido durante el ajuste (menos de 50 dB)','VASA',200.00,5.00,'https://m.media-amazon.com/images/I/71823+gpdhL._AC_SY300_SX300_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (120,4,'Mesa de escritorio para ordenador portátil, mesa de trabajo, madera y acero','La parte superior del escritorio de ordenador está hecha de madera de ingeniería de calidad E1, que es duradera, impermeable y fácil de limpiar. ','Haode',100.00,4.00,'https://m.media-amazon.com/images/I/618DQgYOUBL.__AC_SX300_SY300_QL70_ML2_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (121,8,'Oyster River Tfo Chest Logo','100% algodón (el color gris jaspeado es 50% algodón, 50% poliéster)','Van',20.00,4.30,'https://m.media-amazon.com/images/I/91HalxRgxjL._AC_UL320_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (122,8,'Jomo Combi Camiseta Manga Corta, Hombre','Camiseta de manga corta indicada para deportistas que buscan la máxima comodidad y transpirabilidad','Jomo',10.00,4.00,'https://m.media-amazon.com/images/I/61HewfdsaoL._AC_SX679_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (124,9,'PUMA Smash V2 L, Sneakers Unisex Adulto','Material de la suela: Caucho, Cierre: Cordones','Puma',40.00,4.00,'https://m.media-amazon.com/images/I/41PcY8duhuL._AC_SY695_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (125,9,'Levi\'s Sneakers 234234','100% Polyurethane','Levi',45.00,4.10,'https://m.media-amazon.com/images/I/71tiHPsgl4L._AC_SX625_.jpg',1);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (126,11,'Wuzfully Balón de baloncesto de goma para entrenamiento al aire libre','Tamaño 5 Balón de baloncesto material superior de goma de alta calidad, superficie granulada, antideslizante y resistente al desgaste, ofrece un tacto mucho más agradable y suave','Wuzfully',20.00,5.00,'https://m.media-amazon.com/images/I/71UAIlmJkrL._AC_UL320_.jpg',10);
+INSERT INTO `` (`ID_Producto`,`ID_Metadato`,`Nombre`,`Descripcion`,`Fabricante`,`Precio`,`Valoracion`,`Imagen`,`ID_Usuario`) VALUES (127,11,'Balón de baloncesto tamaño 5, baloncesto para niños, mini baloncesto, tamaño 3, ideal para las manos de los niños jóvenes','El baloncesto se puede usar tanto en interiores como en exteriores. El material de goma garantiza el salto perfecto, incluso los principiantes tienen un buen control de pelota con estos baloncestos.','MSCYAE',22.00,4.20,'https://m.media-amazon.com/images/I/81pnHLxvgnL.__AC_SX300_SY300_QL70_ML2_.jpg',10);
+
+
+
+/*
+-- Query: SELECT * FROM tfm.metadatos
+LIMIT 0, 1000
+
+-- Date: 2024-02-26 15:17
+*/
+INSERT INTO `` (`ID_Metadato`,`ID_Categoria`,`Nombre`,`Tipo_Dato`) VALUES (3,1,'Teclado','Texto');
+INSERT INTO `` (`ID_Metadato`,`ID_Categoria`,`Nombre`,`Tipo_Dato`) VALUES (4,2,'Mesa','Texto');
+INSERT INTO `` (`ID_Metadato`,`ID_Categoria`,`Nombre`,`Tipo_Dato`) VALUES (5,1,'Monitor','Texto');
+INSERT INTO `` (`ID_Metadato`,`ID_Categoria`,`Nombre`,`Tipo_Dato`) VALUES (8,3,'Camiseta','Texto');
+INSERT INTO `` (`ID_Metadato`,`ID_Categoria`,`Nombre`,`Tipo_Dato`) VALUES (9,3,'Zapatos','Texto');
+INSERT INTO `` (`ID_Metadato`,`ID_Categoria`,`Nombre`,`Tipo_Dato`) VALUES (11,8,'Pelotas','Texto');
+
+
+/*
+-- Query: SELECT * FROM tfm.comparativa
+LIMIT 0, 1000
+
+-- Date: 2024-02-26 15:18
+*/
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (8,1,112,113,'Teclados Dieryau y Energia  ','El teclado Dieryau destaca por su diseño ergonómico y retroiluminación ajustable, el teclado Energia se distingue por su durabilidad y rendimiento excepcional',4.00);
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (9,10,114,115,'Teclado QWERTY y KEMOVa','El \"Teclado con Cable, QWERTY\" ofrece funcionalidad y comodidad para un uso general y diario, el \"Teclado KEMOVa\" está diseñado específicamente para satisfacer las necesidades de los jugadores profesionales',4.00);
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (10,1,117,118,'Monitor 22”  y Monitor 23,6\" ','El \"KORU Monitor de 22” FHD 75 Hz\" ofrece una opción compacta con una frecuencia de actualización decente, el \"Monitor Curvo - 23,6 Pulgadas Full HD\" proporciona una experiencia de visualización envolvente y cómoda gracias a su pantalla curva y mayor tamaño.',5.00);
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (11,1,119,120,'Escritorios trabajo','El \"Escritorio Regulable en Altura, Mesa Regulable, Enchufe y Cajón\" ofrece mayor versatilidad y funcionalidad con su superficie ajustable en altura y características adicionales como enchufe y cajón, la \"Mesa de escritorio para ordenador portátil, mesa de trabajo, madera y acero\" proporciona una opción más simple y compacta.',4.00);
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (14,1,121,122,'Camisetas Van y Jomo','La \"camiseta Oyster River Tfo Chest Logo\" se destaca por su diseño elegante y versátil, la \"Jomo Combi Camiseta Manga Corta, Hombre\" está diseñada específicamente para actividades deportivas, ofreciendo funcionalidad y comodidad.',4.00);
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (15,1,124,125,'Zapatos Puma y Levi','Los \"zapatos PUMA Smash V2 L\" destacan por su diseño clásico y versátil, las \"Levi\'s Sneakers 234234\" ofrecen un estilo urbano y contemporáneo con la calidad y el prestigio',5.00);
+INSERT INTO `` (`ID_Comparativa`,`ID_Usuario`,`ID_Producto_1`,`ID_Producto_2`,`Titulo`,`Descripcion`,`Valoracion`) VALUES (16,10,126,127,'Pelotas Wuzfully y MSCYAE','La \"pelota de basket Wuzfully\" está orientada hacia el entrenamiento al aire libre y ofrece durabilidad y resistencia, el \"Balón de baloncesto tamaño 5 para niños\" está diseñado específicamente para los más pequeños, con características adaptadas a sus necesidades y habilidades.',5.00);
+
+
+/*
+-- Query: SELECT * FROM tfm.categoria
+LIMIT 0, 1000
+
+-- Date: 2024-02-26 15:19
+*/
+INSERT INTO `` (`ID_Categoria`,`Nombre`,`Descripcion`,`Icono`,`Cantidad_Productos`) VALUES (1,'Electrónicos','Variedad de productos electrónicos','FaIcons.FaPlug',10);
+INSERT INTO `` (`ID_Categoria`,`Nombre`,`Descripcion`,`Icono`,`Cantidad_Productos`) VALUES (2,'Muebles','Variedad de muebles domésticos','FaIcons.FaCouch',15);
+INSERT INTO `` (`ID_Categoria`,`Nombre`,`Descripcion`,`Icono`,`Cantidad_Productos`) VALUES (3,'Moda','Variedad de muebles domésticos','FaIcons.FaTshirt',15);
+INSERT INTO `` (`ID_Categoria`,`Nombre`,`Descripcion`,`Icono`,`Cantidad_Productos`) VALUES (8,'Deporte','Variedad de productos de Deporte','FaIcons.FaFutbol',2);
