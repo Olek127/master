@@ -1,0 +1,66 @@
+CREATE TABLE `usuario` (
+  `ID_Usuario` int NOT NULL AUTO_INCREMENT,
+  `Nombre` varchar(32) DEFAULT NULL,
+  `Correo_electronico` varchar(255) DEFAULT NULL,
+  `Contrasena` varchar(255) DEFAULT NULL,
+  `Fecha_Registro` date DEFAULT NULL,
+  `Tipo_usuario` enum('Regular','Administrador') DEFAULT NULL,
+  PRIMARY KEY (`ID_Usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `producto` (
+  `ID_Producto` int NOT NULL AUTO_INCREMENT,
+  `ID_Metadato` int NOT NULL,
+  `Nombre` varchar(255) DEFAULT NULL,
+  `Descripcion` text,
+  `Fabricante` varchar(32) DEFAULT NULL,
+  `Precio` decimal(10,2) DEFAULT NULL,
+  `Valoracion` decimal(5,2) DEFAULT NULL,
+  `Imagen` varchar(255) DEFAULT NULL,
+  `ID_Usuario` int DEFAULT NULL,
+  PRIMARY KEY (`ID_Producto`),
+  KEY `ID_Metadato` (`ID_Metadato`),
+  KEY `fk_usuario_producto` (`ID_Usuario`),
+  CONSTRAINT `fk_usuario_producto` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`ID_Usuario`),
+  CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`ID_Metadato`) REFERENCES `metadatos` (`ID_Metadato`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `metadatos` (
+  `ID_Metadato` int NOT NULL AUTO_INCREMENT,
+  `ID_Categoria` int NOT NULL,
+  `Nombre` varchar(32) DEFAULT NULL,
+  `Tipo_Dato` enum('Texto','Número','Fecha') DEFAULT NULL,
+  PRIMARY KEY (`ID_Metadato`),
+  KEY `metadatos_ibfk_1` (`ID_Categoria`),
+  CONSTRAINT `metadatos_ibfk_1` FOREIGN KEY (`ID_Categoria`) REFERENCES `categoria` (`ID_Categoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `comparativa` (
+  `ID_Comparativa` int NOT NULL AUTO_INCREMENT,
+  `ID_Usuario` int DEFAULT NULL,
+  `ID_Producto_1` int DEFAULT NULL,
+  `ID_Producto_2` int DEFAULT NULL,
+  `Titulo` varchar(32) DEFAULT NULL,
+  `Descripcion` text,
+  `Valoracion` decimal(5,2) DEFAULT NULL,
+  PRIMARY KEY (`ID_Comparativa`),
+  KEY `ID_Producto_1` (`ID_Producto_1`),
+  KEY `ID_Producto_2` (`ID_Producto_2`),
+  KEY `FKh5ebsjuwv280kiaw9okav6nik` (`ID_Usuario`),
+  CONSTRAINT `comparativa_ibfk_1` FOREIGN KEY (`ID_Producto_1`) REFERENCES `producto` (`ID_Producto`),
+  CONSTRAINT `comparativa_ibfk_2` FOREIGN KEY (`ID_Producto_2`) REFERENCES `producto` (`ID_Producto`),
+  CONSTRAINT `FKh5ebsjuwv280kiaw9okav6nik` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`ID_Usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `categoria` (
+  `ID_Categoria` int NOT NULL AUTO_INCREMENT,
+  `Nombre` varchar(32) DEFAULT NULL,
+  `Descripcion` text,
+  `Icono` varchar(45) DEFAULT NULL,
+  `Cantidad_Productos` int DEFAULT NULL,
+  PRIMARY KEY (`ID_Categoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
